@@ -1,6 +1,6 @@
 class FitnessTrackerUser {
     private final String firstName;
-    private final String lastName;
+    private String lastName;
     private final int birthDay;
     private final int birthMonth;
     private final int birthYear;
@@ -9,7 +9,7 @@ class FitnessTrackerUser {
     private double weight;
     private String bloodPressure;
     private int stepsPerDay;
-    private int age;
+    private final int age;
 
     public FitnessTrackerUser(String firstName, String lastName, int birthDay, int birthMonth, int birthYear,
                               String email, String phone) {
@@ -29,6 +29,10 @@ class FitnessTrackerUser {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getBirthDay() {

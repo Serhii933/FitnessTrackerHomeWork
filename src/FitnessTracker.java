@@ -5,7 +5,7 @@ class FitnessTracker {
         user1.setBloodPressure("120/80");
         user1.setStepsPerDay(8000);
 
-        FitnessTrackerUser user2 = new FitnessTrackerUser("Jakob", "Breadly", 15, 8, 1984, "Breadly@example.com", "+1534698764");
+        FitnessTrackerUser user2 = new FitnessTrackerUser("Jakob", "Bradly", 15, 8, 1984, "Breadly@example.com", "+1534698764");
         user2.setWeight(70.2);
         user2.setBloodPressure("130/85");
         user2.setStepsPerDay(10000);
@@ -15,8 +15,12 @@ class FitnessTracker {
         user3.setBloodPressure("140/85");
         user3.setStepsPerDay(12000);
 
+
         user1.printAccountInfo();
         user2.printAccountInfo();
         user3.printAccountInfo();
+
+        user1.setLastName("Mike");
+        user1.printAccountInfo();
     }
 }
